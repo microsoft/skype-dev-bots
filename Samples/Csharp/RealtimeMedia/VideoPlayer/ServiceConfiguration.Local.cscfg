@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AudioVideoPlayerBot" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="WorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <!-- Replace $ConnectionString$ with the Connection String found on the ‘Access Keys’ of your Storage Account. -->
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="$ConnectionString$" />
+      <Setting name="ServiceDnsName" value="$ServiceDnsName$" />
+      <!-- xyz.cloudapp.net-->
+      <Setting name="ServiceCNAME" value="" />
+      <!-- Replace $CertificateThumbprint$ with the thumbprint value find on the ‘Certificate’ tab of your Cloud Service. -->
+      <Setting name="DefaultCertificate" value="$CertificateThumbprint$" />
+      <!-- Replace $audioFileName$ and $videoFileName$ with the name of your audio and video file -->
+      <Setting name="AudioContainer" value="audio" />
+      <Setting name="AudioFile" value="$audioFileName$" />
+      <Setting name="VideoContainer" value="video" />
+      <Setting name="VideoFile" value="$videoFileName$" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Default" thumbprint="$CertificateThumbprint$" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <NetworkConfiguration>
+    <AddressAssignments>
+      <InstanceAddress roleName="WorkerRole">
+        <PublicIPs>
+          <PublicIP name="instancePublicIP" domainNameLabel="pip" />
+        </PublicIPs>
+      </InstanceAddress>
+    </AddressAssignments>
+  </NetworkConfiguration>
+</ServiceConfiguration>
