@@ -1,10 +1,10 @@
-# Fridge Bot Sample (Node.js)
+# Fridge Sample
 
 ## Description
-Fridge Bot is a bot that helps you to manage refrigerator inventory. You can add or delete an item or see or clear the inventory of your fridge. The bot uses LUIS (Language Understanding Intelligent Service) Cognitive Service to recognize your intents so that you can talk to the bot as if you are talking to a person. This sample bot will serve as a good example of incorporating natural language processing service to Skype bots.
+Fridge is a bot that helps you to manage refrigerator inventory. You can add or delete an item or see or clear the inventory of your fridge. The bot uses LUIS (Language Understanding Intelligent Service) Cognitive Service to recognize your intents so that you can talk to the bot as if you are talking to a person. This sample bot will serve as a good example of incorporating natural language processing service to Skype bots.
 
 ## Bot Demo
-To add the Fridge Bot to your Skype account, click [here](https://join.skype.com/bot/f2cf7cce-f6c5-427f-84b6-9099c7b877a8).
+To add the Fridge to your Skype account, click [here](https://join.skype.com/bot/f2cf7cce-f6c5-427f-84b6-9099c7b877a8).
 
 ## How it Works
 - The LUIS service associated with this sample bot can understand six different intents: None, add, clear, help, remove and show. It has one entity named item, which is associated with add and remove intents. Each of the intents triggers an action associated with that intent and the action performs necessary operation and ends the dialog.
