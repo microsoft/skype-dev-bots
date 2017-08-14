@@ -1,0 +1,15 @@
+{
+  "name": "myfridgebot",
+  "version": "1.0.0",
+  "description": "MyFridgeBot is a bot that helps users to manage their refrigerator inventory. Users can add or delete an item or see the inventory of their fridge. The bot uses LUIS(Language Understanding Intelligent Service) to recognize user's intents so that users can talk to the bot as if they are talking to a person. We believe this sample bot will not only increase developers' engagement on Skype bots but also serve as a good example of incorporating a natural langauge processing service, LUIS, to Skype bots.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karen Lee",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.8.4",
+    "restify": "^5.0.1"
+  }
+}
