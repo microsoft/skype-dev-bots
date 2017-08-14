@@ -17,6 +17,7 @@ Video Player | A sample bot that plays video and audio files stored as an Azure 
 
 ## Cognitive Services - Language
 Build bots with powerful algorithms using [Microsoft Cognitive Services APIs](https://azure.microsoft.com/en-us/services/cognitive-services/).  
+
 Sample | Description | C# | Node
 ------------ | ------------- | :-----------: | :-----------:
 Fridge | A sample bot that manages your refrigerator inventory using LUIS (Language Understanding Intelligent Service) to understand users' intents. | [View Sample](/Samples/Csharp/CognitiveServices-Language/Fridge) | [View Sample](/Samples/Node/CognitiveServices-Language/Fridge)
