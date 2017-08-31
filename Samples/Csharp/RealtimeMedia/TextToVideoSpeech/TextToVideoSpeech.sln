@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "TtvsBot", "TtvsBot.ccproj", "{4EABD84F-6AD2-48D5-B286-B86758D4F806}"
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "TextToVideoSpeech", "TextToVideoSpeech.ccproj", "{4EABD84F-6AD2-48D5-B286-B86758D4F806}"
 	ProjectSection(ProjectDependencies) = postProject
 		{BD841814-05F3-498D-834D-CC7AFE2A8F1A} = {BD841814-05F3-498D-834D-CC7AFE2A8F1A}
 	EndProjectSection

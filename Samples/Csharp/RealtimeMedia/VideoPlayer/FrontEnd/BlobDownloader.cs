@@ -1,4 +1,9 @@
-﻿using FrontEnd.Logging;
+﻿/**
+* Copyright (c) Microsoft Corporation. All rights reserved.
+* Licensed under the MIT license.
+*/
+
+using FrontEnd.Logging;
 using FrontEnd.Media;
 using Microsoft.Skype.Bots.Media;
 using Microsoft.Skype.Internal.Bots.Media;

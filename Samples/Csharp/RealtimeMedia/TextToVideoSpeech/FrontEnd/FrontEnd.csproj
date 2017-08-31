@@ -209,7 +209,6 @@
   <ItemGroup>
     <Compile Include="CallLogic\MediaSession.cs" />
     <Compile Include="CallLogic\RealTimeMediaCall.cs" />
-    <Compile Include="Http\CognitiveServicesAuthentication.cs" />
     <Compile Include="Http\MessagesController.cs" />
     <Compile Include="Http\CallController.cs" />
     <Compile Include="Http\CallEndpointStartup.cs" />

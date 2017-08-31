@@ -2,9 +2,9 @@
 
 ## Description
 
-The TextToVideoSpeech bot is a sample that generates synthesized speech on an Azure cloud services and streams the audio to the user in a Skype audio call. For this example, we generate the audio buffers needed by the Real-Time Media Platform using two different text-to-speech (TTS) engines: the local TTS engine from the Azure Virtual Machine running your cloud service, and the Bing Text to Speech engine from the Microsoft Cognitive Services.
+The TextToVideoSpeech bot is a sample that generates audio and video streams on an Azure cloud service and streams the content to the user in a Skype video call. 
 
-This sample is based on the AudiovideoPlayerBot sample from the botFramework (https://github.com/Microsoft/BotBuilder-RealTimeMediaCalling/tree/master/Samples/AudioVideoPlayerBot).
+This sample is based on the [AudiovideoPlayerBot](https://github.com/Microsoft/BotBuilder-RealTimeMediaCalling/tree/master/Samples/AudioVideoPlayerBot) sample from the botFramework and the [TextToSpeech](https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Csharp/RealtimeMedia/TextToSpeech) bot .
 
 ## Test the bot
 

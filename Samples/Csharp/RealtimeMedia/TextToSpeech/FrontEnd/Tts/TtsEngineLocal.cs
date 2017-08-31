@@ -1,7 +1,11 @@
-﻿using System.IO;
+﻿/**
+* Copyright (c) Microsoft Corporation. All rights reserved.
+* Licensed under the MIT license.
+*/
+
+using System.IO;
 using System.Speech.AudioFormat;
 using System.Speech.Synthesis;
-using FrontEnd.Tts;
 
 namespace FrontEnd.Tts
 {
