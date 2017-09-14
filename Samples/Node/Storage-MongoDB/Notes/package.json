@@ -1,0 +1,22 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Note is a bot that helps you manage personal notes. The bot uses MongoDB as storage. You can add a note, search for a note, and delete all the notes.",
+  "scripts": {
+    "start": "node src/App.js",
+    "dev": "nodemon src/App.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.9.1",
+    "dotenv": "^4.0.0",
+    "moment": "^2.18.1",
+    "mongodb": "^2.2.30",
+    "restify": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
