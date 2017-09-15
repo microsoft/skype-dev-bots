@@ -1,4 +1,4 @@
-# Fridge Bot Sample (C#)
+# Fridge Sample
 
 ## Description
 Fridge is a bot that helps you to manage refrigerator inventory. You can add or delete an item or see or clear the inventory of your fridge. The bot uses LUIS (Language Understanding Intelligent Service) Cognitive Service to recognize your intents so that you can talk to the bot as if you are talking to a person. This sample bot will serve as a good example of incorporating natural language processing service to Skype bots.
