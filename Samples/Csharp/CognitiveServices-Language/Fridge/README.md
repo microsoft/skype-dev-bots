@@ -6,7 +6,6 @@ Fridge is a bot that helps you to manage refrigerator inventory. You can add or 
 ## Bot Demo
 To add the Fridge to your Skype account, click [here](https://join.skype.com/bot/b99fd107-6b43-449c-bdd2-7552190c9978).
 
-
 ## How it Works
 - The LUIS service associated with this sample bot can understand six different intents: None, add, clear, help, remove and show. It has one entity named item, which is associated with add and remove intents. Each of the intents triggers an action associated with that intent and the action performs necessary operation and ends the dialog.
 - Data that contains saved items is kept track of with userData for simplicity of the sample bot.
