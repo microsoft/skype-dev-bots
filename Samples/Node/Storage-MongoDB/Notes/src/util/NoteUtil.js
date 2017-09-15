@@ -4,34 +4,6 @@ var moment = require('moment');
 function NoteUtil() {}
 
 /**
- This will parse the text and return an object with properties
-  {
-    content: note content text
-    hashtags: array of hashtags in the input text
-  }
- */
-NoteUtil.parseForHashtags = function(text) {
-  let content;
-  let hashtags;
-
-  if (text) {
-    let array = text.split('#');
-    const size = array.length;
-    for (let i = 0; i < size; i++) {
-      let text = array[i].trim();
-      array[i] = text;
-    }
-    content = array[0];
-    hashtags = array.slice(1);
-  }
-
-  return {
-    content: content,
-    hashtags: hashtags
-  }
-}
-
-/**
   Convert the timestamp Date object to a human readable format
 **/
 NoteUtil.formatDate = function(date, localTimestamp) {
