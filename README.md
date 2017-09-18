@@ -1,27 +1,45 @@
 ## Overview
-
-Skype Bot Samples walk you through functionalities and capabilities of Skype Bots using various services provided by Microsoft to help you build great bots. To use the samples clone our GitHub repository using Git.
+Samples walk you through functionalities of Skype bots developed using various services provided by Microsoft. Every sample has a link to add the bot as a Skype contact, so that you can experience the bot capabilities before diving into the code. To get started, clone this repository.
 
     git clone https://github.com/Microsoft/skype-dev-bots.git
     cd skype-dev-bots
 
-
-## Realtime Media
-Build powerful media bots with the [Real-Time Media Platform for bots](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-real-time-media-concepts).  
-
-Sample | Description | C#
------------- | ------------- | :-----------:
-Text to Speech | A sample bot that generates synthesized speech on an Azure cloud services and streams the audio to the user in a Skype audio call. | [View Sample](/Samples/Csharp/RealtimeMedia/TextToSpeech)
-Text to Video Speech | A sample bot that generates synthesized speech on an Azure cloud services and streams the video to the user in a Skype video call. | [View Sample](/Samples/Csharp/RealtimeMedia/TextToVideoSpeech)
-Video Player | A sample bot that plays video and audio files stored as an Azure blob. | [View Sample](/Samples/Csharp/RealtimeMedia/VideoPlayer)
-
-## Cognitive Services - Language
-Build bots with powerful algorithms using [Microsoft Cognitive Services APIs](https://azure.microsoft.com/en-us/services/cognitive-services/).  
+## Fundamentals
+Learn basics of Skype bot development.
 
 Sample | Description | C# | Node
 ------------ | ------------- | :-----------: | :-----------:
-Fridge | A sample bot that manages your refrigerator inventory using LUIS (Language Understanding Intelligent Service) to understand users' intents. | [View Sample](/Samples/Csharp/CognitiveServices-Language/Fridge) | [View Sample](/Samples/Node/CognitiveServices-Language/Fridge)
+Doctor Code | A bot that teaches how to implement basic functionalities in a Skype bot | [View Sample](/Samples/Csharp/Fundamentals/DoctorCode) | [View Sample](/Samples/Node/Fundamentals/DoctorCode) 
 
+## Storage
+Learn how to store and retrieve information from Skype bot using cloud services.
+
+Sample | Description | C# | Node
+------------ | ------------- | :-----------: | :-----------:
+Note | A bot that manages personal notes using MongoDB and Azure | [View Sample](/Samples/Csharp/Storage-MongoDB/Notes) | [View Sample](/Samples/Node/Storage-MongoDB/Notes)
+
+## Realtime Media
+Build powerful media bots using [Real-time Media Platform](https://github.com/Microsoft/BotBuilder-RealTimeMediaCalling).
+
+Sample | Description | C#
+------------ | ------------- | :-----------:
+Text to Speech | A bot that generates synthesized speech on an Azure cloud services and streams the audio to the user in a Skype audio call. | [View Sample](/Samples/Csharp/RealtimeMedia/TextToSpeech)
+Text to Video Speech | A bot that generates synthesized speech on an Azure cloud services and streams the video to the user in a Skype video call. | [View Sample](/Samples/Csharp/RealtimeMedia/TextToVideoSpeech)
+Video Player | A bot that plays video and audio files stored as an Azure blob. | [View Sample](/Samples/Csharp/RealtimeMedia/VideoPlayer)
+
+## Cognitive Services
+Add intelligent features to your bots using [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/).  
+
+Sample | Description | C# | Node
+------------ | ------------- | :-----------: | :-----------:
+Fridge | A bot that manages your refrigerator inventory using LUIS (Language Understanding Intelligent Service) to understand users' intents. | [View Sample](/Samples/Csharp/CognitiveServices-Language/Fridge) | [View Sample](/Samples/Node/CognitiveServices-Language/Fridge)
 
 ## Contributing
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label,comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
