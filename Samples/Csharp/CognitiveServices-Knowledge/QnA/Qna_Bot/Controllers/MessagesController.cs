@@ -46,7 +46,7 @@ namespace QnaBot
             switch (activity.Action)
             {
                 case ContactRelationUpdateActionTypes.Add:
-                    var welcomeCard = Dialogs.WelcomeCard.get(activity);
+                    var welcomeCard = Utils.WelcomeCard.get(activity);
                     return await SendMessageWithAttachments(activity, new List<Attachment> { welcomeCard.ToAttachment() });
                 case ContactRelationUpdateActionTypes.Remove:
                     // No action.

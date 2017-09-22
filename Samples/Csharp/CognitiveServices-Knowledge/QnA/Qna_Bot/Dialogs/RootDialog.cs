@@ -7,7 +7,6 @@ using QnaBot.QnAService;
 using Microsoft.Bot.Builder.Dialogs.Internals;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using QnaBot.Properties;
 
 namespace QnaBot.Dialogs
@@ -99,7 +98,7 @@ namespace QnaBot.Dialogs
                 }
                 else
                 {
-                    await DialogUtils.SendMessageAsync(context, Resources.ERROR);
+                    await SendMessageAsync(context, Resources.ERROR);
                 }
             }
         }
@@ -113,24 +112,24 @@ namespace QnaBot.Dialogs
                 answerCards.Add(card);
             }
             
-            await DialogUtils.SendMessageAsync(context, answerCards, title);
+            await SendMessageAsync(context, answerCards, title);
         }
 
         private static async Task ShowWelcome(IBotContext context)
         {
-            var card = WelcomeCard.get(context.Activity);
-            await DialogUtils.SendMessageAsync(context, card.ToAttachment());
+            var card = Utils.WelcomeCard.get(context.Activity);
+            await SendMessageAsync(context, card.ToAttachment());
         }
 
         private static async Task ShowHelp(IBotContext context)
         {
             var card = GetHelpCard();
-            await DialogUtils.SendMessageAsync(context, card.ToAttachment());
+            await SendMessageAsync(context, card.ToAttachment());
         }
 
         private static async Task ShowNoAnswer(IBotContext context)
         {
-            await DialogUtils.SendMessageAsync(context, Resources.NO_ANSWER_FOUND);
+            await SendMessageAsync(context, Resources.NO_ANSWER_FOUND);
         }
 
         private static async Task ShowAskQuestionHelpResponse(IBotContext context)
@@ -145,7 +144,7 @@ namespace QnaBot.Dialogs
                 stringBuilder.Append(question);
             }
             string text = string.Format(Resources.HELP_ASK_QUESTION_RESPONSE, stringBuilder.ToString());
-            await DialogUtils.SendMessageAsync(context, text);
+            await SendMessageAsync(context, text);
         }
 
         private static HeroCard GetAnswerCard(Answer answer)
@@ -211,6 +210,29 @@ namespace QnaBot.Dialogs
             }
 
             return text.EndsWith("?");
+        }
+
+        private static async Task SendMessageAsync(IBotToUser context, Attachment attachment)
+        {
+            var message = context.MakeMessage();
+            message.Attachments.Add(attachment);
+            await context.PostAsync(message);
+        }
+
+        private static async Task SendMessageAsync(IBotToUser context, List<HeroCard> cards, string title)
+        {
+            var message = context.MakeMessage();
+            message.Text = title;
+            message.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+            message.Attachments = cards.Select(card => card.ToAttachment()).ToList();
+            await context.PostAsync(message);
+        }
+
+        private static async Task SendMessageAsync(IBotToUser context, string text)
+        {
+            var message = context.MakeMessage();
+            message.Text = text;
+            await context.PostAsync(message);
         }
     }
 }

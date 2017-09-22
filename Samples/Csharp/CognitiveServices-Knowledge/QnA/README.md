@@ -67,7 +67,6 @@ Set up the environment for your bot as described [here](https://docs.microsoft.c
 
 - In Web.config file, replace values from your QnA service you created above.
 ```
-<!-- Database Name for the Mongo DB-->
 <add key="QnABaseUrl" value="$value$"/>
 <add key="QnAKnowledgeBaseId" value="$value$"/>
 <add key="QnASubscriptionKey" value="$value$"/>
@@ -104,6 +103,6 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/bot-framework/de
 
 
 ## More Information
-To get more information about the Microsoft Bot Framework and Azure Cosmos DB with MongoDB, please review the following resources:
+To get more information about the Microsoft Bot Framework and the Microsoft QnA Maker, please review the following resources:
 - [Bot Builder SDK for .NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-overview)
-- [Introduction to Azure Cosmos DB: API for MongoDB](https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-introduction)
+- [QnA Maker](https://azure.microsoft.com/en-us/services/cognitive-services/qna-maker/)

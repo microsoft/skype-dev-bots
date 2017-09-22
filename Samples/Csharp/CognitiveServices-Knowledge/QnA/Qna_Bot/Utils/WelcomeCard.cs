@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace QnaBot.Dialogs
+namespace QnaBot.Utils
 {
     public class WelcomeCard
     {
