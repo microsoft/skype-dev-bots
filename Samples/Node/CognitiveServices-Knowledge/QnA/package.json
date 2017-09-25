@@ -1,0 +1,27 @@
+{
+  "name": "skypedevplatform-qnamaker",
+  "version": "1.0.0",
+  "description": "Leverage Microsoft Bot Framework and Microsoft QnA Maker REST API that trains AI to respond to user's questions in a more natural, conversational way.",
+  "license": "@ Microsoft 2017",
+  "engines": {
+    "node": ">=6.7.0",
+    "npm": ">=3.10.3"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "clean": "rimraf node_modules",
+    "start-dev": "npm run installtools && npm run start",
+    "installtools": "npm install rimraf && npm install"
+  },
+  "author": "yanxz",
+  "dependencies": {
+    "botbuilder": "^3.9.1",
+    "dotenv": "4.0.0",
+    "jslint": "^0.11.0",
+    "request": "^2.81.0",
+    "restify": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/restify": "^5.0.1"
+  }
+}
