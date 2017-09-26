@@ -1,7 +1,7 @@
 # QnA Bot Sample
 
 ## Description
-QnA is a bot that helps you get answers based on FAQs. The bot uses Azure Cognitive knowledge base QnA service. You can ask Azure Support questions and either get the answers to the question, or get proposed answer/question if the asked question don't have answers from the knowledge base.
+QnA is a bot that helps you get answers based on FAQs. The bot uses Azure Cognitive knowledge base QnAMaker service. You can ask Azure Support questions and either get the answers to the question, or get proposed answer/question if the asked question doesn't have answers from the knowledge base.
 
 ## Bot Demo
 To add the QnA demo bot to your Skype account, click [here](https://join.skype.com/bot/5cad1822-248f-4bb0-b8ae-ea5554d1ef2f).

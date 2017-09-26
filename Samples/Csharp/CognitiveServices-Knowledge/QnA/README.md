@@ -1,13 +1,13 @@
 # QnA Bot Sample
 
 ## Description
-Microsoft QnA Maker is a free, easy-to-use, REST API and web-based service that trains AI to respond to a user's questions in a more natural, conversational way ([read more](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/home)).
+QnA is a bot that helps you get answers based on FAQs. The bot uses Azure Cognitive knowledge base QnAMaker service. You can ask Azure Support questions and either get the answers to the question, or get proposed answer/question if the asked question doesn't have answers from the knowledge base.
 
 ## Bot Demo
 To add the QnA demo bot to your Skype account, click [here](https://join.skype.com/bot/05ad2d2d-b847-4616-9f0a-ac9d570a9874).
 
 ## Background
-Microsoft QnA Maker is a free, easy-to-use, REST API and web-based service that trains AI to response to user's questions in a more natural, conversational way ([read more](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/home)).
+Microsoft QnA Maker is a free, easy-to-use, REST API and web-based service that trains AI to response to a user's questions in a more natural, conversational way ([read more](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/home)).
 
 ## Create your own QnA Maker service
 1. Create a knowledge base
