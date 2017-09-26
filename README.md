@@ -32,7 +32,8 @@ Add intelligent features to your bots using [Microsoft Cognitive Services](https
 
 Sample | Description | C# | Node
 ------------ | ------------- | :-----------: | :-----------:
-Fridge | A bot that manages your refrigerator inventory using LUIS (Language Understanding Intelligent Service) | [View Sample](/Samples/Csharp/CognitiveServices-Language/Fridge) | [View Sample](/Samples/Node/CognitiveServices-Language/Fridge)
+Fridge | A bot that manages your refrigerator inventory using LUIS (Language Understanding Intelligent Service). | [View Sample](/Samples/Csharp/CognitiveServices-Language/Fridge) | [View Sample](/Samples/Node/CognitiveServices-Language/Fridge)
+QnA | A bot that helps you get answers based on FAQsusing QnAMaker service. | [View Sample] (/Samples/Csharp/CognitiveServices-Knowledge/QnA) | [View Sample] (/Samples/Node/CognitiveServices-Knowledge/QnA)
 
 ## Contributing
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
