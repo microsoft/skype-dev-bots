@@ -41,6 +41,10 @@
         "type": "string",
         "defaultValue": "Samples/Node/Fundamentals/DoctorCode"
       },
+      "WebsiteNodeDefaultVersion": {
+        "type": "string",
+        "defaultValue": "6.9.1"
+      },
       "MicrosoftAppId": {
         "type": "string"
       },
@@ -87,15 +91,19 @@
             "properties": {
               "appSettings": [
                 {
+                  "name": "WEBSITE_NODE_DEFAULT_VERSION",
+                  "value": "[parameters('WebsiteNodeDefaultVersion')]"
+                },
+                {
                   "name": "Project",
                   "value": "[parameters('Project')]"
                 },
                 {
-                  "name": "MicrosoftAppId",
+                  "name": "MICROSOFT_APP_ID",
                   "value": "[parameters('MicrosoftAppId')]"
                 },
                 {
-                  "name": "MicrosoftAppPassword",
+                  "name": "MICROSOFT_APP_PASSWORD",
                   "value": "[parameters('MicrosoftAppPassword')]"
                 }
               ]
