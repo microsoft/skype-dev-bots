@@ -9,7 +9,7 @@ Learn basics of Skype bot development.
 
 Sample | Description | C# | Node
 ------------ | ------------- | :-----------: | :-----------:
-Doctor Code | A bot that teaches how to implement basic functionalities in a Skype bot | [View Sample](/Samples/Csharp/Fundamentals/DoctorCode) | [View Sample](/Samples/Node/Fundamentals/DoctorCode) 
+Doctor Code | A bot that teaches how to implement basic functionalities in a Skype bot | [View Sample](/Samples/Csharp/Fundamentals/DoctorCode) | [View Sample](/Samples/Node/Fundamentals/DoctorCode)[![Deploy to Azure][Deploy Button]][Deploy Node/Fundamentals/DoctorCode]
 
 ## Storage
 Learn how to store and retrieve information from Skype bot using cloud services.
@@ -44,3 +44,7 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+[Deploy Button]: https://azuredeploy.net/deploybutton.png
+[Deploy Node/Fundamentals/DoctorCode]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Node/Fundamentals/DoctorCode
+[Deploy Csharp/Fundamentals/DoctorCode]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Csharp/Fundamentals/DoctorCode
