@@ -39,7 +39,7 @@
       },
       "Project": {
         "type": "string",
-        "defaultValue": "Sample/Node/Fundamentals/DoctorCode"
+        "defaultValue": "Samples/Node/Fundamentals/DoctorCode"
       },
       "MicrosoftAppId": {
         "type": "string"
