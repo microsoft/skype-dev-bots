@@ -1,12 +1,12 @@
 // set environmental variables
-require('./config.js');
+require('dotenv').config();
 
 // import restify & botbuilder
 var restify = require('restify');
 var builder = require('botbuilder');
 
 //import constant texts and utils
-var text = require('./text');
+var strings = require('./strings');
 var util = require('./util');
 
 // setup restify server
@@ -31,7 +31,7 @@ var bot = new builder.UniversalBot(connector);
 bot.on('contactRelationUpdate', function (message) {
     if (message.action == 'add') {
         // send a greeting message when added
-        bot.send(new builder.Message().address(message.address).text(text.GREET));
+        bot.send(new builder.Message().address(message.address).text(strings.GREET));
     } else if (message.action == 'remove') {
         // clear up the user data when removed
         bot.loadSession(message.address, function (err, session) {
@@ -51,7 +51,7 @@ bot.recognizer(new builder.LuisRecognizer(luisEndpoint));
 bot.dialog('none',
     function (session, args, next) {
         util.initFridge(session);
-        session.endDialog(text.NOT_YET_SUPPORTED);
+        session.endDialog(strings.NOT_YET_SUPPORTED);
     }
 ).triggerAction({
     matches: 'None'
@@ -64,10 +64,10 @@ bot.dialog('put', [
         var item = entity ? entity.entity : null;
 
         if (item == null) {
-            session.endDialog(text.NO_ITEM_TO_ADD);
+            session.endDialog(strings.NO_ITEM_TO_ADD);
         } else {
             util.addToFridge(session, item);
-            session.endDialog(text.ADDED, item);
+            session.endDialog(strings.ADDED, item);
         }
     }
 ]).triggerAction({
@@ -81,14 +81,14 @@ bot.dialog('remove', [
         var item = entity ? entity.entity : null;
 
         if (item == null) {
-            session.endDialog(text.NO_ITEM_TO_REMOVE);
+            session.endDialog(strings.NO_ITEM_TO_REMOVE);
         }
 
         if (util.isInFridge(session, item)) {
             util.removeFromFridge(session, item);
-            session.endDialog(text.REMOVED_SUCC, item);
+            session.endDialog(strings.REMOVED_SUCC, item);
         } else {
-            session.endDialog(text.REMOVED_ERR, item);
+            session.endDialog(strings.REMOVED_ERR, item);
         }
     }
 ]).triggerAction({
@@ -98,7 +98,7 @@ bot.dialog('remove', [
 // dialog for SHOW: get list of ingredients
 bot.dialog('show', [
     function (session, args, next) {
-        session.endDialog(text.SHOW, util.itemsToString(session.userData.ingredients));
+        session.endDialog(strings.SHOW, util.itemsToString(session.userData.ingredients));
     }
 ]).triggerAction({
     matches: 'show'
@@ -107,7 +107,7 @@ bot.dialog('show', [
 // dialog for HELP: give instructions
 bot.dialog('help',
     function (session, args, next) {
-        session.endDialog(text.HELP);
+        session.endDialog(strings.HELP);
     }
 ).triggerAction({
     matches: 'help'
@@ -116,15 +116,15 @@ bot.dialog('help',
 // dialog for CLEAR: clear all inventory
 bot.dialog('clear', [
     function (session, args, next) {
-        builder.Prompts.text(session, text.CLEAR);
+        builder.Prompts.text(session, strings.CLEAR);
     },
     
     function (session, results) {
         if (results.response == 'yes') {
             util.removeAllFromFridge(session);
-            session.endDialog(text.CLEAR_YES);
+            session.endDialog(strings.CLEAR_YES);
         } else {
-            session.endDialog(text.CLEAR_NO);
+            session.endDialog(strings.CLEAR_NO);
         }
     }
 ]).triggerAction({
