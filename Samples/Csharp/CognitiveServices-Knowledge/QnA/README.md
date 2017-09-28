@@ -1,18 +1,18 @@
-# QnAMaker bot Sample (C#)
+# QnA Bot Sample
 
 ## Description
-QnaMaker is a bot that helps you get answers based on FAQs. The bot use Azure Cognitive knowledge base QnAMaker service. You can ask Azure Support questions, either get the answers of the question, or get proposed answer/question if the asked question doesn't have answer from the knowledge base.
+QnA is a bot that helps you get answers based on FAQs. The bot uses Azure Cognitive knowledge base QnAMaker service. You can ask Azure Support questions and either get the answers to the question, or get proposed answer/question if the asked question doesn't have answers from the knowledge base.
 
 ## Bot Demo
-To add the QnAMaker demo bot to your Skype account, click [here](https://join.skype.com/bot/05ad2d2d-b847-4616-9f0a-ac9d570a9874).
+To add the QnA demo bot to your Skype account, click [here](https://join.skype.com/bot/05ad2d2d-b847-4616-9f0a-ac9d570a9874).
 
 ## Background
-Microsoft QnA Maker is a free, easy-to-use, REST API and web-based service that trains AI to response to user's questions in a more natural, conversational way ([read more](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/home)).
+Microsoft QnA Maker is a free, easy-to-use, REST API and web-based service that trains AI to response to a user's questions in a more natural, conversational way ([read more](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/home)).
 
 ## Create your own QnA Maker service
 1. Create a knowledge base
 
-Click [here](https://qnamaker.ai) to login into QnAMaker service website. Click "Create new service" to open the page for creating knowledge base. Fill in "service name" and "faq urls", then click "Create". (More details can be found [here](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/guides/createkb).)
+Click [here](https://qnamaker.ai) to login into QnA Maker service website. Click "Create new service" to open the page for creating knowledge base. Fill in "service name" and "faq urls", then click "Create". (More details can be found [here](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/guides/createkb).)
 
 ![Create a knowledge base](./assets/create-kb.png)
 
@@ -33,7 +33,7 @@ From "My services" -> "View code", you can find the knowledge base ID and Ocp-Ap
 1. The bot I will demonstrate is built in C#. The bot is fairly simple, but if you're new to Microsoft bot builder, several of the concepts might be foreign. For a quick ramp up check out [aka.ms/botcourse](http://aka.ms/botcourse), specifically the sections about setting up a C# project, using cards and using dialogs.
 
 1. Generate answers for question:
-    Build a POST request based on [QnAMaker service generate-answer API](https://westus.dev.cognitive.microsoft.com/docs/services/58994a073d9e04097c7ba6fe/operations/58994a073d9e041ad42d9ba9).
+    Build a POST request based on [QnA Maker service generate-answer API](https://westus.dev.cognitive.microsoft.com/docs/services/58994a073d9e04097c7ba6fe/operations/58994a073d9e041ad42d9ba9).
 
     See QnAService/Client.cs
 ```
@@ -58,7 +58,7 @@ From "My services" -> "View code", you can find the knowledge base ID and Ocp-Ap
 1. Propose question and answer
     If no answers found to the question, we propose 3 most frequently ask questions, together with the answers in a carousel list:
 
-    Build a GET http request based on [QnAMaker service download API](https://westus.dev.cognitive.microsoft.com/docs/services/58994a073d9e04097c7ba6fe/operations/58994a073d9e041ad42d9bac).
+    Build a GET http request based on [QnA Maker service download API](https://westus.dev.cognitive.microsoft.com/docs/services/58994a073d9e04097c7ba6fe/operations/58994a073d9e041ad42d9bac).
 
 ## Run locally
 Set up the environment for your bot as described [here](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-quickstart). Install Visual Studio 2017 for Windows and update all extensions. Download the Bot Application, Bot Controller, and Bot Dialog templates and install it as instructed.
