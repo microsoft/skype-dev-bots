@@ -36,7 +36,7 @@ bot.dialog('put', [
 In this section, we will go over how to deploy this Fridge Bot sample from start to end.
 
 #### Prerequisites
-Set up the environment for your bot as described [here](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-quickstart). Install Node.js and npm if not already installed, and install the Bot Builder SDK for Node.js and restify as instructed.
+Set up the environment for your bot as described [here](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-quickstart). Install Node.js and npm if not already installed, and install the Bot Builder SDK for Node.js and restify as instructed. The bot uses [dotenv](https://www.npmjs.com/package/dotenv) module to load environmental variables; install the dotenv package in your bot directory.
 
 #### Create a LUIS Application
 This Fridge Bot Sample uses Language Understanding Intelligent Service, or, LUIS, to understand user's intents. Learn more about LUIS [here](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home). Let's create a new LUIS Application for your Fridge Bot.
@@ -69,14 +69,14 @@ At this point, you have first, added six intents (None, add, clear, help, remove
 Register the sample bot following this [link](https://docs.microsoft.com/en-us/bot-framework/portal-register-bot), and make a note of the Microsoft App ID and Password to update the configurations of your bot.
 
 #### Update Configurations
-- In config.js file, replace $MICROSOFT_APP_ID$ and $MICROSOFT_APP_PASSWORD$ with values obtained during the bot registration from the previous step.
+- In .env file, replace $MICROSOFT_APP_ID$ and $MICROSOFT_APP_PASSWORD$ with values obtained during the bot registration from the previous step.
 ```
-process.env['MICROSOFT_APP_ID'] = '$MICROSOFT_APP_ID$'
-process.env['MICROSOFT_APP_PASSWORD'] = '$MICROSOFT_APP_PASSWORD$';
+MICROSOFT_APP_ID=$MICROSOFT_APP_ID$
+MICROSOFT_APP_PASSWORD=$MICROSOFT_APP_PASSWORD$
 ```
 - Also, replace $MICROSOFT_LUIS_ENDPOINT$ with the endpoint url to your LUIS app.
 ```
-process.env['MICROSOFT_LUIS_ENDPOINT'] = '$MICROSOFT_LUIS_ENDPOINT$';
+MICROSOFT_LUIS_ENDPOINT=$MICROSOFT_LUIS_ENDPOINT$
 ```
 
 #### Deploy the bot to the cloud
