@@ -39,7 +39,7 @@
       },
       "Project": {
         "type": "string",
-        "defaultValue": "Samples/Csharp/Fundamentals/DoctorCode"
+        "defaultValue": "Samples/Csharp/Fundamentals/DoctorCode/DrCodeBot"
       },
       "MicrosoftAppId": {
         "type": "string"
