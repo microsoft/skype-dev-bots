@@ -116,8 +116,8 @@ Set up the environment for your bot as described [here](https://docs.microsoft.c
 In the .env file, add QnA Maker service API Variables including: OCP_API_SUBSCRIPTION_KEY, KNOWLEDGE_BASE and QNA_SERVICE_API_URL.
 ```
 # QnA Maker service API Variables
-OCP_API_SUBSCRIPTION_KEY='4aed7e6d55904dc9a34a4ed4358f0603'
-KNOWLEDGE_BASE='b9dc7315-9627-466a-9be8-768e975ab654'
+OCP_API_SUBSCRIPTION_KEY='value'
+KNOWLEDGE_BASE='value'
 QNA_SERVICE_API_URL='https://westus.api.cognitive.microsoft.com/qnamaker/v2.0/knowledgebases/'
 ```
 
