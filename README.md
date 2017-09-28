@@ -32,7 +32,7 @@ Add intelligent features to your bots using [Microsoft Cognitive Services](https
 
 Sample | Description | C# | Node
 ------------ | ------------- | :-----------: | :-----------:
-Fridge | A bot that manages your refrigerator inventory using LUIS (Language Understanding Intelligent Service). | [View Sample](/Samples/Csharp/CognitiveServices-Language/Fridge) | [View Sample](/Samples/Node/CognitiveServices-Language/Fridge)
+Fridge | A bot that manages your refrigerator inventory using LUIS (Language Understanding Intelligent Service). | [View Sample](/Samples/Csharp/CognitiveServices-Language/Fridge) | [View Sample](/Samples/Node/CognitiveServices-Language/Fridge)[![Deploy to Azure][Deploy Button]][Deploy Node/CognitiveServices-Language/Fridge]
 QnA | A bot that helps you get answers based on FAQs using QnAMaker service. | [View Sample](/Samples/Csharp/CognitiveServices-Knowledge/QnA) | [View Sample](/Samples/Node/CognitiveServices-Knowledge/QnA)
 
 ## Contributing
@@ -48,3 +48,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [Deploy Button]: https://azuredeploy.net/deploybutton.png
 [Deploy Node/Fundamentals/DoctorCode]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/DeployToAzureButton/Samples/Node/Fundamentals/DoctorCode
 [Deploy Csharp/Fundamentals/DoctorCode]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/DeployToAzureButton/Samples/Csharp/Fundamentals/DoctorCode
+[Deploy Node/CognitiveServices-Language/Fridge]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/DeployToAzureButton/Samples/Node/CognitiveServices-Language/Fridge
