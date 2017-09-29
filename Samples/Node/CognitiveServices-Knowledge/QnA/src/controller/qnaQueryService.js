@@ -13,7 +13,7 @@ const request = require('request');
 module.exports = function () {
     const headers = {
         'content-type': 'application/json',
-        'Ocp-Apim-Subscription-Key': process.env.OCP_API_SUBSCRIPTION_KEY
+        'Ocp-Apim-Subscription-Key': process.env.OCP_APIM_SUBSCRIPTION_KEY
     };
 
     function query(question, counts) {
