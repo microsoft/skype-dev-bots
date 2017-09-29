@@ -13,8 +13,9 @@ module.exports = function() {
     const ticks = noteUtil.dateToTicks(Date.now());
     const note = new Note(userId + "_" + ticks, userId, content, ticks);
     const db = databaseSingleton.getDB();
+    const collection_name = process.env.COLLECTION_NAME;
 
-    dbHelper.addDocument(db, strings.NOTES_COLLECTION, note)
+    dbHelper.addDocument(db, collection_name, note)
       .then(result => {
         callback(null, result.ops[0]);
       })
@@ -37,7 +38,7 @@ module.exports = function() {
       filter['Content'] = { $regex: searchText };
     }
 
-    dbHelper.queryForDocuments(db, strings.NOTES_COLLECTION, filter)
+    dbHelper.queryForDocuments(db, collection_name, filter)
       .then(docs => {
         callback(docs)
       })
@@ -55,7 +56,7 @@ module.exports = function() {
       UserId: userId
     };
 
-    dbHelper.removeAllDocuments(db, strings.NOTES_COLLECTION, filter)
+    dbHelper.removeAllDocuments(db, collection_name, filter)
       .then(results => {
         callback(results.deletedCount);
       })

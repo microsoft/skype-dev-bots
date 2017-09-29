@@ -7,7 +7,7 @@ module.exports = function(database) {
     return new Promise(function(resolve, reject) {
       MongoClient.connect(uri)
         .then(database => {
-            resolve(database.db(strings.NOTES_DB));
+            resolve(database.db(process.env.DB_NAME));
           })
         .catch(err => {
           reject(err.message);
@@ -46,7 +46,7 @@ module.exports = function(database) {
 
   function addDocument(db, collection, doc) {
     return new Promise(function(resolve, reject) {
-      db.db("notes_db").collection(collection, (error, collection) => {
+      db.db(process.env.DB_NAME).collection(collection, (error, collection) => {
         if (error) {
           reject(error.message);
         } else {
