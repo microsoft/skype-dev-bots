@@ -1,5 +1,10 @@
 # QnA Bot Sample
 
+[![Deploy to Azure][Deploy Button]][Deploy Node/CognitiveServices-Knowledge/QnA]
+
+[Deploy Button]: https://azuredeploy.net/deploybutton.png
+[Deploy Node/CognitiveServices-Knowledge/QnA]: https://azuredeploy.net
+
 ## Description
 QnA is a bot that helps you get answers based on FAQs. The bot uses Azure Cognitive knowledge base QnAMaker service. You can ask Azure Support questions and either get the answers to the question, or get proposed answer/question if the asked question doesn't have answers from the knowledge base.
 
