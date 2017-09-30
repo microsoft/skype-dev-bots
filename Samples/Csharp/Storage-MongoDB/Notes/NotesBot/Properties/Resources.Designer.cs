@@ -61,15 +61,6 @@ namespace Notes.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to all_notes.
-        /// </summary>
-        internal static string ALL_NOTES {
-            get {
-                return ResourceManager.GetString("ALL_NOTES", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to delete.
         /// </summary>
         internal static string DELETE {

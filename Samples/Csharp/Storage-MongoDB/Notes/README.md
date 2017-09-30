@@ -19,10 +19,11 @@ Use the following links to help you setup an Azure Cosmos DB store with MongoDB.
 
 #### Update Config
 
-- In Web.config file, replace $DBName$ with the name of your database.
+- In Web.config file, replace $DBName$ with the name of your database and $CollectionName$ with the name of your db collection.
 ```
-<!-- Database Name for the Mongo DB-->
+<!-- Database Name and Collection Name for the Mongo DB-->
 <add key="DBName" value="$DBName$"/>
+<add key="CollectioName" value="$CollectionName$"/>
 ```
 - Also, add the value for $MongoDBConnectionString$ that you obtained earlier when setting up the Azure Cosmos DB with MongoDB. It should look something like this:
 ```

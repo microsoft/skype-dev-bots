@@ -39,7 +39,7 @@ namespace Notes.Dialogs
             else
             {
                 var userId = context.Activity.From.Id;                
-                var notesCollection = DbSingleton.GetDatabase().GetCollection<Note>(Resources.ALL_NOTES);
+                var notesCollection = DbSingleton.GetDatabase().GetCollection<Note>(AppSettings.CollectionName);
                 notesCollection.InsertOne(CreateNote(userId, content));
 
                 reply.Attachments.Add(GetNoteAddedCard(content).ToAttachment());

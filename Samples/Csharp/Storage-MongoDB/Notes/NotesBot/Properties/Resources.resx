@@ -141,10 +141,6 @@
   <data name="WELCOME_CARD_TEXT" xml:space="preserve">
     <value>I am here to be your assistant and take notes for you.</value>
   </data>
-  <data name="ALL_NOTES" xml:space="preserve">
-    <value>all_notes</value>
-    <comment>Database's collection name.</comment>
-  </data>
   <data name="DELETE" xml:space="preserve">
     <value>delete</value>
     <comment>Command for deleting the notes.</comment>

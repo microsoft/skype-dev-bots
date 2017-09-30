@@ -43,7 +43,7 @@ namespace Notes.Dialogs
 
         private static List<Note> GetNotesForUser(string userId, string searchText)
         {
-            var collection = DbSingleton.GetDatabase().GetCollection<Note>(Resources.ALL_NOTES);
+            var collection = DbSingleton.GetDatabase().GetCollection<Note>(AppSettings.CollectionName);
             var filter = Builders<Note>.Filter.Where(x => x.UserId == userId);
 
             if (!String.IsNullOrEmpty(searchText))
