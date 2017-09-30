@@ -1,5 +1,10 @@
 # Note Sample
 
+[![Deploy to Azure][Deploy Button]][Deploy Node/Storage-MongoDB/Notes]
+
+[Deploy Button]: https://azuredeploy.net/deploybutton.png
+[Deploy Node/Storage-MongoDB/Notes]: https://azuredeploy.net
+
 ## Description
 Note is a bot that helps you manage personal notes. The bot uses MongoDB as storage. You can add a note, search for a note, and delete all the notes.
 
