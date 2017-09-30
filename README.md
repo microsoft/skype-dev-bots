@@ -9,7 +9,7 @@ Learn basics of Skype bot development.
 
 Sample | Description | C# | Node
 ------------ | ------------- | :-----------: | :-----------:
-Doctor Code | A bot that teaches how to implement basic functionalities in a Skype bot | [View Sample](/Samples/Csharp/Fundamentals/DoctorCode) | [View Sample](/Samples/Node/Fundamentals/DoctorCode) 
+Doctor Code | A bot that teaches how to implement basic functionalities in a Skype bot | [View Sample](/Samples/Csharp/Fundamentals/DoctorCode)[![Deploy to Azure][Deploy Button]][Deploy Csharp/Fundamentals/DoctorCode] | [View Sample](/Samples/Node/Fundamentals/DoctorCode)[![Deploy to Azure][Deploy Button]][Deploy Node/Fundamentals/DoctorCode]
 
 ## Storage
 Learn how to store and retrieve information from Skype bot using cloud services.
@@ -32,7 +32,8 @@ Add intelligent features to your bots using [Microsoft Cognitive Services](https
 
 Sample | Description | C# | Node
 ------------ | ------------- | :-----------: | :-----------:
-Fridge | A bot that manages your refrigerator inventory using LUIS (Language Understanding Intelligent Service) | [View Sample](/Samples/Csharp/CognitiveServices-Language/Fridge) | [View Sample](/Samples/Node/CognitiveServices-Language/Fridge)
+Fridge | A bot that manages your refrigerator inventory using LUIS (Language Understanding Intelligent Service). | [View Sample](/Samples/Csharp/CognitiveServices-Language/Fridge) | [View Sample](/Samples/Node/CognitiveServices-Language/Fridge)[![Deploy to Azure][Deploy Button]][Deploy Node/CognitiveServices-Language/Fridge]
+QnA | A bot that helps you get answers based on FAQs using QnAMaker service. | [View Sample](/Samples/Csharp/CognitiveServices-Knowledge/QnA)[![Deploy to Azure][Deploy Button]][Deploy Csharp/CognitiveServices-Knowledge/QnA] | [View Sample](/Samples/Node/CognitiveServices-Knowledge/QnA)[![Deploy to Azure][Deploy Button]][Deploy Node/CognitiveServices-Knowledge/QnA]
 
 ## Contributing
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
@@ -43,3 +44,10 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+[Deploy Button]: https://azuredeploy.net/deploybutton.png
+[Deploy Csharp/Fundamentals/DoctorCode]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Csharp/Fundamentals/DoctorCode
+[Deploy Node/Fundamentals/DoctorCode]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Node/Fundamentals/DoctorCode
+[Deploy Node/CognitiveServices-Language/Fridge]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Node/CognitiveServices-Language/Fridge
+[Deploy Csharp/CognitiveServices-Knowledge/QnA]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Csharp/CognitiveServices-Knowledge/QnA
+[Deploy Node/CognitiveServices-Knowledge/QnA]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Node/CognitiveServices-Knowledge/QnA

@@ -1,5 +1,10 @@
 # Doctor Code
 
+[![Deploy to Azure][Deploy Button]][Deploy Node/Fundamentals/DoctorCode]
+
+[Deploy Button]: https://azuredeploy.net/deploybutton.png
+[Deploy Node/Fundamentals/DoctorCode]: https://azuredeploy.net
+
 ## Description
 Doctor Code teaches a developer how to implement few basic functionalities in a Skype bot. You can now build a bot using a bot. Currently, Doctor Code teaches you the following.
 - Greet a user: How to send a greeting to your user when your bot meets the user for the first time.

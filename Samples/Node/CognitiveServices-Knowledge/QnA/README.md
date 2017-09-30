@@ -1,5 +1,10 @@
 # QnA Bot Sample
 
+[![Deploy to Azure][Deploy Button]][Deploy Node/CognitiveServices-Knowledge/QnA]
+
+[Deploy Button]: https://azuredeploy.net/deploybutton.png
+[Deploy Node/CognitiveServices-Knowledge/QnA]: https://azuredeploy.net
+
 ## Description
 QnA is a bot that helps you get answers based on FAQs. The bot uses Azure Cognitive knowledge base QnAMaker service. You can ask Azure Support questions and either get the answers to the question, or get proposed answer/question if the asked question doesn't have answers from the knowledge base.
 
@@ -38,7 +43,7 @@ From "My services" -> "View code", you can find the knowledge base ID and Ocp-Ap
 ```
     const headers = {
         'content-type': 'application/json',
-        'Ocp-Apim-Subscription-Key': process.env.OCP_API_SUBSCRIPTION_KEY
+        'Ocp-Apim-Subscription-Key': process.env.OCP_APIM_SUBSCRIPTION_KEY
     };
 
     function query(question, counts) {
@@ -113,10 +118,10 @@ From "My services" -> "View code", you can find the knowledge base ID and Ocp-Ap
 Set up the environment for your bot as described [here](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-quickstart). Install Node.js and npm if not already installed, and install the Bot Builder SDK for Node.js and restify as instructed.
 
 #### Update Configurations
-In the .env file, add QnA Maker service API Variables including: OCP_API_SUBSCRIPTION_KEY, KNOWLEDGE_BASE and QNA_SERVICE_API_URL.
+In the .env file, add QnA Maker service API Variables including: OCP_APIM_SUBSCRIPTION_KEY, KNOWLEDGE_BASE and QNA_SERVICE_API_URL.
 ```
 # QnA Maker service API Variables
-OCP_API_SUBSCRIPTION_KEY='value'
+OCP_APIM_SUBSCRIPTION_KEY='value'
 KNOWLEDGE_BASE='value'
 QNA_SERVICE_API_URL='https://westus.api.cognitive.microsoft.com/qnamaker/v2.0/knowledgebases/'
 ```
