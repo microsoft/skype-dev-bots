@@ -46,8 +46,8 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 [Deploy Button]: https://azuredeploy.net/deploybutton.png
-[Deploy Csharp/Fundamentals/DoctorCode]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/DeployToAzureButton/Samples/Csharp/Fundamentals/DoctorCode
-[Deploy Node/Fundamentals/DoctorCode]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/DeployToAzureButton/Samples/Node/Fundamentals/DoctorCode
-[Deploy Node/CognitiveServices-Language/Fridge]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/DeployToAzureButton/Samples/Node/CognitiveServices-Language/Fridge
-[Deploy Csharp/CognitiveServices-Knowledge/QnA]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/DeployToAzureButton/Samples/Csharp/CognitiveServices-Knowledge/QnA
-[Deploy Node/CognitiveServices-Knowledge/QnA]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/DeployToAzureButton/Samples/Node/CognitiveServices-Knowledge/QnA
+[Deploy Csharp/Fundamentals/DoctorCode]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Csharp/Fundamentals/DoctorCode
+[Deploy Node/Fundamentals/DoctorCode]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Node/Fundamentals/DoctorCode
+[Deploy Node/CognitiveServices-Language/Fridge]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Node/CognitiveServices-Language/Fridge
+[Deploy Csharp/CognitiveServices-Knowledge/QnA]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Csharp/CognitiveServices-Knowledge/QnA
+[Deploy Node/CognitiveServices-Knowledge/QnA]: https://azuredeploy.net?repository=https://github.com/Microsoft/skype-dev-bots/tree/master/Samples/Node/CognitiveServices-Knowledge/QnA
