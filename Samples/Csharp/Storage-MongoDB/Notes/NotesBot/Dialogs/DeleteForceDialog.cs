@@ -29,7 +29,7 @@ namespace Notes.Dialogs
         // Delete all notes given user ID, and returns the number of deleted notes on success.
         private static async Task<long> DeleteNotes(string userId)
         {
-            var collection = DbSingleton.GetDatabase().GetCollection<Note>(Resources.ALL_NOTES);
+            var collection = DbSingleton.GetDatabase().GetCollection<Note>(AppSettings.CollectionName);
             var filter = Builders<Note>.Filter.Where(x => x.UserId == userId);
 
             var response = await collection.DeleteManyAsync(filter);

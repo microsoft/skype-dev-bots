@@ -23,7 +23,11 @@ Use the following links to help you setup an Azure Cosmos DB store with MongoDB.
 ```
 MONGO_DB_STRING=mongodb://username:password@host:port/[database]?ssl=true
 ```
-- Also, in Strings.js file, replace NOTES_DB string with your database name and NOTES_COLLECTION string with your collection name that you will be using for the bot.
+- Also, replace $DB_NAME$ with your database name and $COLLECTION_NAME$ with your collection name that you will be using for the bot.
+```
+DB_NAME=$DB_NAME$
+COLLECTION_NAME=$COLLECTION_NAME$
+```
 
 ## Deploy the Bot Sample
 

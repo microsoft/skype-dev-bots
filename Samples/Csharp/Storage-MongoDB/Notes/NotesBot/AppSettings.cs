@@ -9,9 +9,12 @@
         private static Lazy<string> skypeBotMention = new Lazy<string>(() => ConfigurationManager.AppSettings["SkypeBotAtMention"].ToString());
         private static Lazy<string> mongoDBConnectionString = new Lazy<string>(() => ConfigurationManager.ConnectionStrings["MongoDB"].ToString());
         private static Lazy<string> dbName = new Lazy<string>(() => ConfigurationManager.AppSettings["DBName"].ToString());
+        private static Lazy<string> collectionName = new Lazy<string>(() => ConfigurationManager.AppSettings["CollectionName"].ToString());
+        
 
         public static string SkypeBotId => skypeBotId.Value;
         public static string DbName => dbName.Value;
+        public static string CollectionName => collectionName.Value;
         public static string MongoDBConnectionString => mongoDBConnectionString.Value;
     }
 }

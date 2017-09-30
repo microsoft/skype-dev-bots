@@ -1,6 +1,4 @@
 module.exports = Object.freeze({
-  NOTES_DB: "notes_db",
-  NOTES_COLLECTION: "all_notes",
   WELCOME_IMAGE_URL: "https://notesbotapp.azurewebsites.net/Resources/welcome_card.png",
 
   NOTE: "note",
