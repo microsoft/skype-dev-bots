@@ -84,15 +84,7 @@
         },
         "properties": {
           "name": "[parameters('siteName')]",
-          "serverFarm": "[parameters('hostingPlanName')]",
-          "siteConfig": {
-            "connectionStrings": [ 
-              {
-                "name": "MongoDB",
-                "ConnectionString": "[parameters('MongoDbConnectionString')]"
-              }
-            ]
-          }
+          "serverFarm": "[parameters('hostingPlanName')]"
         },
         "resources": [
           {
