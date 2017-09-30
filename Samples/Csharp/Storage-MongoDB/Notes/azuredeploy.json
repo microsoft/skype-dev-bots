@@ -116,6 +116,12 @@
                 "name": "CollectionName",
                 "value": "[parameters('CollectionName')]"
               }
+            ],
+            "connectionStrings": [
+              {
+                "Name": "MongoDB",
+                "ConnectionString": "[parameters('MongoDbConnectionString')]"
+              }
             ]
           }
         },
