@@ -39,7 +39,7 @@
     },
     "Project": {
       "type": "string",
-      "defaultValue": "Samples/Csharp/Storage-MongoDB/Notes/NotesBot"
+      "defaultValue": "Samples/Csharp/Storage-MongoDB/Notes/Bot"
     },
     "MicrosoftAppId": {
       "type": "string"
