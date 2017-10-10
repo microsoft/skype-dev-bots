@@ -1,5 +1,5 @@
 ## Overview
-Samples walk you through functionalities of Skype bots developed using various services provided by Microsoft. Every sample has a link to add the bot as a Skype contact, so that you can experience the bot capabilities before diving into the code. To get started, clone this repository.
+Samples walk you through functionalities of Skype bots developed using various services provided by Microsoft. Every sample has a link to add the bot as a Skype contact, so that you can experience the bot capabilities before diving into the code. Once the bot is ready to be submitted to Skype channel, you can refer [Bot certification checklist](certification/CHECKLIST.md) to ensure that the bot satisfies certification criteria. To get started, clone this repository.
 
     git clone https://github.com/Microsoft/skype-dev-bots.git
     cd skype-dev-bots
