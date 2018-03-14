@@ -15,5 +15,5 @@ This document captures the certification checklist used by Microsoft and Skype t
 | 204 | Bot must be fast | The bot must respond to user commands without extensive delays.|
 | 205 | Bot must be mobile-friendly | The bot must be designed in a way that enables users to be able to interact with it on a mobile device. For example, the bot should not send excessively long individual messages (instead it can send a sequence of several messages). To ensure the bot is mobile friendly, please test on a mobile device (Android or iOS) with the latest versions of Skype. |
 | **300** | **Compliance** |
-| 301 | Your Bot Submission must PASS Developer Code of Conduct policy and Online Services Agreement | See [Code of Conduct](https://www.botframework.com/Content/Developer-Code-of-Conduct-for-Microsoft-Bot-Framework.htm) and [Online Services Agreement](https://www.botframework.com/Content/Microsoft-Bot-Framework-Preview-Online-Services-Agreement.htm).|
-| 302 | Your bot must comply with bot review guidelines | See [Bot review guidelines](https://docs.microsoft.com/en-us/bot-framework/portal-bot-review-guidelines) |
+| 301 | Your Bot Submission must PASS Azure Online Service Terms| See [Azure Online Service Terms]( https://azure.microsoft.com/en-gb/support/legal/)|
+| 302 | Your Bot Submission must PASS Microsoft Channel Publication Terms | See [[Microsoft Channel Publication Terms](https://www.botframework.com/content/bot-service-channels-terms.htm) |
