@@ -125,14 +125,14 @@ namespace WorkerRole
             // Create structured config objects for service.
             CallControlCallbackUrl = new Uri(string.Format(
                 "https://{0}:{1}/{2}/{3}/",
-                ServiceDnsName,
+                ServiceCNAME,
                 instanceCallControlPublicPort,
                 HttpRouteConstants.CallSignalingRoutePrefix,
                 HttpRouteConstants.OnCallbackRoute));
 
             NotificationCallbackUrl = new Uri(string.Format(
                 "https://{0}:{1}/{2}/{3}/",
-                ServiceDnsName,
+                ServiceCNAME,
                 instanceCallControlPublicPort,
                 HttpRouteConstants.CallSignalingRoutePrefix,
                 HttpRouteConstants.OnNotificationRoute));
@@ -165,7 +165,7 @@ namespace WorkerRole
                     InstanceInternalPort = mediaInstanceInternalPort,
                     InstancePublicIPAddress = publicInstanceIpAddress,
                     InstancePublicPort = mediaInstancePublicPort,
-                    ServiceFqdn = ServiceDnsName
+                    ServiceFqdn = ServiceCNAME
                 },
 
                 ApplicationId = MicrosoftAppId
