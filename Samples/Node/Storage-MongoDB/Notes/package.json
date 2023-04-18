@@ -17,6 +17,6 @@
     "restify": "^5.2.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.19.4"
   }
 }
