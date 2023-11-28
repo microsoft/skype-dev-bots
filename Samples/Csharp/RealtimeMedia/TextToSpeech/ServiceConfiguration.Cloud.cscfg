@@ -5,7 +5,8 @@
     <ConfigurationSettings>
       <!-- Replace $ConnectionString$ with the Connection String found on the ‘Access Keys’ of your Storage Account. -->
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="$ConnectionString$" />
-      <Setting name="ServiceDnsName" value="$ServiceDnsName$" />  <!-- xyz.cloudapp.net--> 
+      <Setting name="ServiceDnsName" value="$ServiceDnsName$" /><!-- xyz.cloudapp.net-->
+      <Setting name="ServiceCNAME" value="$ServiceCNAME$" /><!-- CNAME pointing to the .cloudapp.net-->
       <!-- Replace $CertificateThumbprint$ with the thumbprint value find on the ‘Certificate’ tab of your Cloud Service. -->
       <Setting name="DefaultCertificate" value="$CertificateThumbprint$" />
       <Setting name="Skype.Bots.Speech.Subscription" value="$BingSpeechAPIKey$"/>
